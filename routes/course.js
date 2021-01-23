@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const Course = require('../models').Course;
-const User = require('../models').User;
 const asyncHandler = require('../middleware/asyncHandler');
 const authUser = require('../middleware/authUser');
 
