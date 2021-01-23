@@ -15,11 +15,12 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "sqlite",
-    "storage": "fsjstd-restapi.db"
+    "username": "febhdrzhqimgab",
+    "password": "f1aec2fcbbd1a119cc4108a9f13c0347514238f52928e0af37d0a8272021576a",
+    "database": "d3548pvckl0ieb",
+    "host": "ec2-54-85-13-135.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "port": "5432",
+    "uri": "postgres://febhdrzhqimgab:f1aec2fcbbd1a119cc4108a9f13c0347514238f52928e0af37d0a8272021576a@ec2-54-85-13-135.compute-1.amazonaws.com:5432/d3548pvckl0ieb"
   }
 }
