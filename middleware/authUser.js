@@ -2,11 +2,11 @@ const bcrypt = require('bcryptjs');
 const auth = require('basic-auth');
 const {User} = require('../models');
 
-
+// middleware to authenticate users.
 async function authenticateUser(req, res, next) {
     const credentials = auth(req);
     let message;
-
+    console.log(req);
     if (credentials) {
         const user = await User.findOne({ where: {emailAddress: credentials.name} });
         if (user) {

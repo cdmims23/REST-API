@@ -1,3 +1,5 @@
+// middleware handler for routes that are asynchronous. 
+
 module.exports = asyncHandler = (cb) => {
     return async (req, res, next) => {
       try {
