@@ -28,12 +28,12 @@ Creates and seeds a SQLite database.<br />
 
 
 ## API Endpoints
-*[GET Course](https://cori-course-api.herokuapp.com/api/v1/courses/)
-*[GET User](https://cori-course-api.herokuapp.com/api/v1/users/) - Must be authenticated to access route.
-*[POST User](https://cori-course-api.herokuapp.com/api/v1/users/)
-*[POST Course](https://cori-course-api.herokuapp.com/api/v1/courses/) - Must be authenticated to access route.
-*[UPDATE Course](https://cori-course-api.herokuapp.com/api/v1/courses/:id) - Must be authenticated to access route. Must be the creator of the course and have the id.
-*[DELETE Course](https://cori-course-api.herokuapp.com/api/v1/courses/:id) - Must be authenticated to access route. Must be the creator of the course and have the id.
+* [GET Course](https://cori-course-api.herokuapp.com/api/v1/courses/)
+* [GET User](https://cori-course-api.herokuapp.com/api/v1/users/) - Must be authenticated to access route.
+* [POST User](https://cori-course-api.herokuapp.com/api/v1/users/)
+* [POST Course](https://cori-course-api.herokuapp.com/api/v1/courses/) - Must be authenticated to access route.
+* [UPDATE Course](https://cori-course-api.herokuapp.com/api/v1/courses/:id) - Must be authenticated to access route. Must be the creator of the course and have the id.
+* [DELETE Course](https://cori-course-api.herokuapp.com/api/v1/courses/:id) - Must be authenticated to access route. Must be the creator of the course and have the id.
 
 ## Authors
 
