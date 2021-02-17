@@ -2,7 +2,7 @@
  REST API
 
 # OverView
-REST API is the backend for a future React project. It utilizes sequelize as an ORM to connect with a sequelize database. It also utilizes authentication so that only registered user can create, update, and delete courses. The app also uses bcrypt to hash the passwords of users.
+REST API is the backend for a future React project. It utilizes sequelize as an ORM to connect with a database. It also utilizes authentication so that only registered user can create, update, and delete courses. The app also uses bcrypt to hash the passwords of users.
 
 ## Available Scripts
 
@@ -23,7 +23,8 @@ Creates and seeds a SQLite database.<br />
 ## Built With
 
 * [Express](http://expressjs.com/) - The web framework used
-* [SQLite](https://www.sqlite.org/index.html) - The database used
+* [SQLite](https://www.sqlite.org/index.html) - The database used for development
+* [Postgres](https://www.postgresql.org/) - The database used in production
 * [Sequelize](https://pugjs.org/api/getting-started.html) - The ORM  used to interact with the database.
 
 
