@@ -1,12 +1,13 @@
 const router = require('express').Router();
 const Course = require('../models').Course;
+const User = require('../models').User;
 const asyncHandler = require('../middleware/asyncHandler');
 const authUser = require('../middleware/authUser');
 
 
 // GET: returns a list of courses
 router.get('/', asyncHandler( async (req, res) => {
-    const courseList = await Course.findAll();
+    const courseList = await Course.findAll({include: [{model: User}]});
     if (courseList) {
         res.json(courseList);
       } else {

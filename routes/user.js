@@ -8,7 +8,7 @@ const authUser = require('../middleware/authUser');
 // GET: Returns a user if a user has been authenticated.
 router.get('/', authUser, asyncHandler(async(req, res) => {
     if (req.currentUser) {
-        res.json({currentUser: req.currentUser.firstName});
+        res.json({currentUser: req.currentUser});
     } else {
         res.json({currentUser: 'No User'});
     }
