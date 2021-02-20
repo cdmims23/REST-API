@@ -21,8 +21,8 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 
-app.use('/api/v1/courses', courseRoute);
-app.use('/api/v1/users', userRoute);
+app.use('/api/courses', courseRoute);
+app.use('/api/users', userRoute);
 // setup a friendly greeting for the root route
 app.get('/', async(req, res) => {
   res.json({

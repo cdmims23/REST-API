@@ -45,7 +45,7 @@ router.post('/', authUser, asyncHandler( async (req, res) => {
         const course = await Course.create(newCourse);
         res
           .status(201)
-          .location('/api/v1/courses/' + course.id)
+          .location('/api/courses/' + course.id)
           .end();
       } catch (error) {
         console.log('ERROR: ', error.name);
