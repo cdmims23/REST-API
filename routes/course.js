@@ -20,7 +20,7 @@ router.get('/', asyncHandler( async (req, res) => {
 
 // GET: returns the course with the id in the url if the course exists
 router.get('/:id', asyncHandler( async (req, res) => {
-    const course = await Course.findByPk(req.params.id);
+    const course = await Course.findByPk(req.params.id, {include: [{model: User}]});
     if (course) {
         res.json(course);
       } else {
